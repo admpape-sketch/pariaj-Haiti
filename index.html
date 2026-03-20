@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariaj Haiti | Akèy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .sidebar-item:hover { background-color: #1a2736; border-left: 4px solid #eab308; }
+        .jackpot-box { background: linear-gradient(180deg, #1a2736 0%, #000 100%); border: 1px solid #444; }
+    </style>
+</head>
+<body class="bg-[#0b1623] text-white">
+
+    <header class="flex items-center justify-between p-3 bg-[#0b1623] border-b border-gray-800 sticky top-0 z-50">
+        <div class="flex items-center space-x-6">
+            <h1 class="text-2xl font-black italic tracking-tighter">PARIAJ<span class="text-yellow-500">HAITI</span> 🇭🇹</h1>
+            <nav class="hidden lg:flex space-x-4 text-xs font-bold uppercase text-gray-400">
+                <a href="#" class="hover:text-white">Andirek</a>
+                <a href="#" class="hover:text-white">Espò</a>
+                <a href="#" class="text-yellow-500 underline decoration-2 offset-4">Jwèt</a>
+                <a href="#" class="hover:text-white">Blog</a>
+                <a href="#" class="hover:text-white">Pwomosyon</a>
+            </nav>
+        </div>
+        <div class="flex space-x-2">
+            <button class="px-4 py-1.5 text-xs font-bold bg-[#1a2736] rounded">Konekte</button>
+            <button class="px-4 py-1.5 text-xs font-bold bg-yellow-500 text-black rounded">Enskri</button>
+        </div>
+    </header>
+
+    <div class="flex">
+        <aside class="w-64 hidden md:block bg-[#0b1623] border-r border-gray-800 min-h-screen p-4">
+            <div class="space-y-1 text-sm font-semibold text-gray-300">
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between">Popilè <i class="fas fa-chevron-down text-[10px] pt-1"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between text-yellow-500">PariajHaiti <i class="fas fa-chevron-down text-[10px] pt-1"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between">logames <i class="fas fa-chevron-down text-[10px] pt-1"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between">Mascot <i class="fas fa-chevron-down text-[10px] pt-1"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between text-blue-400">Pragmatic <i class="fas fa-chevron-down text-[10px] pt-1"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between">Live Casino <i class="fas fa-chevron-down text-[10px] pt-1"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between">Slots Classic <i class="fas fa-chevron-down text-[10px] pt-1"></i></div>
+            </div>
+        </aside>
+
+        <main class="flex-1 p-4">
+            <div class="relative bg-gradient-to-r from-blue-600 to-indigo-900 rounded-xl p-8 flex items-center justify-between overflow-hidden mb-6">
+                <div class="z-10">
+                    <div class="bg-yellow-500 text-black inline-block px-2 py-1 rounded text-[10px] font-bold mb-2">BONIS PREMYE DEPO</div>
+                    <h2 class="text-6xl font-black italic">+150% <span class="text-4xl">BONIS</span></h2>
+                    <p class="text-sm font-bold mt-2">JISKA $2000 SOU PREMYE DEPO KRIPTOMONEN OU A</p>
+                </div>
+                <div class="absolute right-10 opacity-30 text-[180px]">
+                    <i class="fab fa-bitcoin"></i>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-4 mb-8">
+                <div class="jackpot-box p-4 rounded-lg text-center border-b-2 border-yellow-500">
+                    <p class="text-[10px] uppercase text-gray-400">Silver Jackpot</p>
+                    <p class="text-2xl font-mono font-bold text-yellow-500" id="silver">6310</p>
+                </div>
+                <div class="jackpot-box p-4 rounded-lg text-center border-b-2 border-yellow-400 scale-105">
+                    <p class="text-[10px] uppercase text-gray-400">Gold Jackpot</p>
+                    <p class="text-2xl font-mono font-bold text-yellow-400" id="gold">30525</p>
+                </div>
+                <div class="jackpot-box p-4 rounded-lg text-center border-b-2 border-white">
+                    <p class="text-[10px] uppercase text-gray-400">Maximum Jackpot</p>
+                    <p class="text-2xl font-mono font-bold text-white" id="max">134781</p>
+                </div>
+            </div>
+
+            <div class="flex space-x-6 text-xs font-bold uppercase border-b border-gray-800 pb-2 mb-6 overflow-x-auto">
+                <a href="#" class="text-yellow-500 border-b-2 border-yellow-500 pb-2">Tout</a>
+                <a href="games.html" class="text-gray-400 hover:text-white">Popilè</a>
+                <a href="#" class="text-gray-400 hover:text-white">Slots</a>
+                <a href="#" class="text-gray-400 hover:text-white">Live Casino</a>
+            </div>
+
+            <h3 class="text-xl font-bold mb-4">Popilè</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <a href="lucky6.html" class="block group">
+                    <div class="relative rounded-lg overflow-hidden h-40 bg-gray-800">
+                        <img src="https://images.unsplash.com/photo-1518893063132-36e46dbe2428?auto=format&fit=crop&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+                            <button class="bg-yellow-500 text-black font-bold px-4 py-2 rounded-full text-xs italic">JWE KOUNYE A</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Animasyon Jackpot pou l parèt reyèl
+        setInterval(() => {
+            document.getElementById('silver').innerText = (parseInt(document.getElementById('silver').innerText) + 1);
+            document.getElementById('gold').innerText = (parseInt(document.getElementById('gold').innerText) + 2);
+        }, 3000);
+    </script>
+</body>
+</html>
