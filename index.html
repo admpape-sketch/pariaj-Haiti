@@ -3,100 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pariaj Haiti | Akèy</title>
+    <title>PARYAJPAM | Pariaj Haiti</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .sidebar-item:hover { background-color: #1a2736; border-left: 4px solid #eab308; }
-        .jackpot-box { background: linear-gradient(180deg, #1a2736 0%, #000 100%); border: 1px solid #444; }
+        body { background-color: #0b1623; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .sidebar-item:hover { background-color: #1a2736; border-left: 4px solid #facc15; transition: 0.3s; }
+        .jackpot-display { background: #000; border: 2px solid #333; border-radius: 5px; padding: 2px 5px; font-family: monospace; }
+        .custom-scrollbar::-webkit-scrollbar { width: 5px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #333; border-radius: 10px; }
     </style>
 </head>
-<body class="bg-[#0b1623] text-white">
+<body class="overflow-x-hidden">
 
     <header class="flex items-center justify-between p-3 bg-[#0b1623] border-b border-gray-800 sticky top-0 z-50">
         <div class="flex items-center space-x-6">
-            <h1 class="text-2xl font-black italic tracking-tighter">PARIAJ<span class="text-yellow-500">HAITI</span> 🇭🇹</h1>
-            <nav class="hidden lg:flex space-x-4 text-xs font-bold uppercase text-gray-400">
+            <h1 class="text-2xl font-black italic tracking-tighter uppercase">Paryaj<span class="text-yellow-500">Pam</span> 🇭🇹</h1>
+            <nav class="hidden lg:flex space-x-6 text-[11px] font-bold uppercase text-gray-400">
                 <a href="#" class="hover:text-white">Andirek</a>
                 <a href="#" class="hover:text-white">Espò</a>
-                <a href="#" class="text-yellow-500 underline decoration-2 offset-4">Jwèt</a>
+                <a href="index.html" class="text-yellow-500 underline underline-offset-8 decoration-2">Jwèt</a>
                 <a href="#" class="hover:text-white">Blog</a>
-                <a href="#" class="hover:text-white">Pwomosyon</a>
+                <a href="pwomosyon.html" class="hover:text-white">Pwomosyon</a>
             </nav>
         </div>
-        <div class="flex space-x-2">
-            <button class="px-4 py-1.5 text-xs font-bold bg-[#1a2736] rounded">Konekte</button>
-            <button class="px-4 py-1.5 text-xs font-bold bg-yellow-500 text-black rounded">Enskri</button>
+        <div class="flex space-x-3 items-center">
+            <button class="px-4 py-1.5 text-xs font-bold bg-[#1a2736] rounded hover:bg-gray-700">Konekte</button>
+            <button class="px-4 py-1.5 text-xs font-bold bg-yellow-500 text-black rounded hover:bg-yellow-400">Enskri</button>
         </div>
     </header>
 
     <div class="flex">
-        <aside class="w-64 hidden md:block bg-[#0b1623] border-r border-gray-800 min-h-screen p-4">
-            <div class="space-y-1 text-sm font-semibold text-gray-300">
-                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between">Popilè <i class="fas fa-chevron-down text-[10px] pt-1"></i></div>
-                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between text-yellow-500">PariajHaiti <i class="fas fa-chevron-down text-[10px] pt-1"></i></div>
-                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between">logames <i class="fas fa-chevron-down text-[10px] pt-1"></i></div>
-                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between">Mascot <i class="fas fa-chevron-down text-[10px] pt-1"></i></div>
-                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between text-blue-400">Pragmatic <i class="fas fa-chevron-down text-[10px] pt-1"></i></div>
-                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between">Live Casino <i class="fas fa-chevron-down text-[10px] pt-1"></i></div>
-                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between">Slots Classic <i class="fas fa-chevron-down text-[10px] pt-1"></i></div>
+        <aside class="w-64 hidden md:block bg-[#0b1623] border-r border-gray-800 min-h-screen p-4 custom-scrollbar overflow-y-auto">
+            <div class="space-y-2 text-sm font-semibold text-gray-400">
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between items-center">Popilè <i class="fas fa-chevron-down text-[10px]"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between items-center text-white bg-[#15202d]">Paryajpam <i class="fas fa-chevron-down text-[10px]"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between items-center">logames <i class="fas fa-chevron-down text-[10px]"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between items-center">Mascot <i class="fas fa-chevron-down text-[10px]"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between items-center">Pragmatic <i class="fas fa-chevron-down text-[10px]"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between items-center">Live Casino <i class="fas fa-chevron-down text-[10px]"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between items-center">Slots Classic <i class="fas fa-chevron-down text-[10px]"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between items-center">Turbogames <i class="fas fa-chevron-down text-[10px]"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between items-center">Goldenrace <i class="fas fa-chevron-down text-[10px]"></i></div>
+                <div class="sidebar-item p-3 rounded cursor-pointer flex justify-between items-center border-b border-gray-800 pb-4">TVBet <i class="fas fa-chevron-down text-[10px]"></i></div>
             </div>
         </aside>
 
-        <main class="flex-1 p-4">
-            <div class="relative bg-gradient-to-r from-blue-600 to-indigo-900 rounded-xl p-8 flex items-center justify-between overflow-hidden mb-6">
-                <div class="z-10">
-                    <div class="bg-yellow-500 text-black inline-block px-2 py-1 rounded text-[10px] font-bold mb-2">BONIS PREMYE DEPO</div>
-                    <h2 class="text-6xl font-black italic">+150% <span class="text-4xl">BONIS</span></h2>
-                    <p class="text-sm font-bold mt-2">JISKA $2000 SOU PREMYE DEPO KRIPTOMONEN OU A</p>
+        <main class="flex-1 p-4 lg:p-6">
+            <div class="relative bg-gradient-to-r from-blue-600 via-indigo-700 to-purple-800 rounded-2xl p-6 lg:p-12 mb-8 overflow-hidden shadow-2xl">
+                <div class="relative z-10 max-w-lg">
+                    <img src="https://via.placeholder.com/100x40/FFD700/000000?text=PARYAJ+PAM" class="mb-4 rounded shadow-lg" alt="Logo">
+                    <h2 class="text-6xl font-black italic tracking-tighter leading-none">+150% <span class="text-4xl block">BONIS</span></h2>
+                    <p class="mt-4 font-bold text-lg uppercase tracking-wide">Jiska $2000 sou premye depo kriptomonen ou a</p>
+                    <a href="pwomosyon.html" class="mt-6 inline-block bg-pink-600 hover:bg-pink-700 text-white font-black px-8 py-3 rounded-full text-sm uppercase transition transform hover:scale-105">Pran Bonis Kounye a</a>
                 </div>
-                <div class="absolute right-10 opacity-30 text-[180px]">
-                    <i class="fab fa-bitcoin"></i>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-3 gap-4 mb-8">
-                <div class="jackpot-box p-4 rounded-lg text-center border-b-2 border-yellow-500">
-                    <p class="text-[10px] uppercase text-gray-400">Silver Jackpot</p>
-                    <p class="text-2xl font-mono font-bold text-yellow-500" id="silver">6310</p>
-                </div>
-                <div class="jackpot-box p-4 rounded-lg text-center border-b-2 border-yellow-400 scale-105">
-                    <p class="text-[10px] uppercase text-gray-400">Gold Jackpot</p>
-                    <p class="text-2xl font-mono font-bold text-yellow-400" id="gold">30525</p>
-                </div>
-                <div class="jackpot-box p-4 rounded-lg text-center border-b-2 border-white">
-                    <p class="text-[10px] uppercase text-gray-400">Maximum Jackpot</p>
-                    <p class="text-2xl font-mono font-bold text-white" id="max">134781</p>
+                <div class="absolute right-[-20px] top-[-20px] opacity-20 text-[250px] rotate-12">
+                    <i class="fab fa-bitcoin text-yellow-500"></i>
                 </div>
             </div>
 
-            <div class="flex space-x-6 text-xs font-bold uppercase border-b border-gray-800 pb-2 mb-6 overflow-x-auto">
-                <a href="#" class="text-yellow-500 border-b-2 border-yellow-500 pb-2">Tout</a>
-                <a href="games.html" class="text-gray-400 hover:text-white">Popilè</a>
-                <a href="#" class="text-gray-400 hover:text-white">Slots</a>
-                <a href="#" class="text-gray-400 hover:text-white">Live Casino</a>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <div class="bg-[#15202d] p-4 rounded-xl border border-gray-700 text-center">
+                    <p class="text-[10px] uppercase text-gray-500 font-bold">Silver Jackpot</p>
+                    <div class="flex justify-center mt-2 space-x-1">
+                        <span class="jackpot-display text-2xl text-yellow-500 font-bold" id="j1">6310</span>
+                    </div>
+                </div>
+                <div class="bg-[#15202d] p-4 rounded-xl border border-yellow-600/50 text-center shadow-lg shadow-yellow-500/10">
+                    <p class="text-[10px] uppercase text-gray-500 font-bold">Gold Jackpot</p>
+                    <div class="flex justify-center mt-2 space-x-1">
+                        <span class="jackpot-display text-2xl text-yellow-400 font-bold" id="j2">30525</span>
+                    </div>
+                </div>
+                <div class="bg-[#15202d] p-4 rounded-xl border border-gray-700 text-center">
+                    <p class="text-[10px] uppercase text-gray-500 font-bold">Maximum Jackpot</p>
+                    <div class="flex justify-center mt-2 space-x-1">
+                        <span class="jackpot-display text-2xl text-white font-bold" id="j3">134781</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-6 relative">
+                <i class="fas fa-search absolute left-4 top-3.5 text-gray-500"></i>
+                <input type="text" placeholder="Chèche jwèt" class="w-full bg-[#15202d] border border-gray-700 rounded-lg py-3 px-12 focus:outline-none focus:border-yellow-500 text-sm">
             </div>
 
             <h3 class="text-xl font-bold mb-4">Popilè</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <a href="lucky6.html" class="block group">
-                    <div class="relative rounded-lg overflow-hidden h-40 bg-gray-800">
-                        <img src="https://images.unsplash.com/photo-1518893063132-36e46dbe2428?auto=format&fit=crop&w=400" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-                            <button class="bg-yellow-500 text-black font-bold px-4 py-2 rounded-full text-xs italic">JWE KOUNYE A</button>
-                        </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+                <div class="bg-[#15202d] rounded-lg overflow-hidden group cursor-pointer border border-transparent hover:border-yellow-500">
+                    <div class="h-32 bg-gray-700 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1606167668584-78701c57f13d?auto=format&fit=crop&w=400" class="w-full h-full object-cover group-hover:scale-110 transition">
                     </div>
-                </a>
+                    <div class="p-3 text-xs font-bold text-center">AVIATOR</div>
+                </div>
+                <div class="bg-[#15202d] rounded-lg overflow-hidden group cursor-pointer border border-transparent hover:border-yellow-500">
+                    <div class="h-32 bg-gray-700 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?auto=format&fit=crop&w=400" class="w-full h-full object-cover group-hover:scale-110 transition">
+                    </div>
+                    <div class="p-3 text-xs font-bold text-center">POKER HOLDEM</div>
+                </div>
             </div>
         </main>
+
+        <aside class="w-80 hidden xl:block bg-[#0b1623] border-l border-gray-800 p-4">
+            <div class="flex justify-between gap-1 mb-6">
+                <div class="bg-black p-2 rounded text-[8px] text-center flex-1 border border-gray-800">
+                    <p class="text-gray-500">SILVER</p>
+                    <p class="text-yellow-500 font-bold">6310</p>
+                </div>
+                <div class="bg-black p-2 rounded text-[8px] text-center flex-1 border border-gray-800">
+                    <p class="text-gray-500">GOLD</p>
+                    <p class="text-yellow-500 font-bold">30525</p>
+                </div>
+                <div class="bg-black p-2 rounded text-[8px] text-center flex-1 border border-gray-800">
+                    <p class="text-gray-500">MAXIMUM</p>
+                    <p class="text-yellow-500 font-bold">134781</p>
+                </div>
+            </div>
+
+            <div class="bg-[#15202d] rounded-xl overflow-hidden border border-gray-700">
+                <div class="h-48 bg-red-900 relative flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1511193311914-0346f16efe90?auto=format&fit=crop&w=400" class="absolute inset-0 w-full h-full object-cover opacity-40">
+                    <div class="relative text-center">
+                         <div class="flex space-x-1 mb-2 justify-center scale-75">
+                            <span class="w-8 h-8 rounded-full bg-yellow-500 flex items-center justify-center font-bold text-black">10</span>
+                            <span class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold">27</span>
+                            <span class="w-10 h-10 rounded-full bg-white text-red-600 flex items-center justify-center font-bold text-xl shadow-xl">6</span>
+                            <span class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center font-bold">14</span>
+                        </div>
+                        <h4 class="text-2xl font-black italic">LUCKY 6</h4>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h5 class="font-bold text-lg mb-2">Lucky 6</h5>
+                    <p class="text-[11px] text-gray-400 leading-tight">Lucky 6 ofri yon jwèt lotri eksitan, kote jwè yo chwazi nimewo, swiv tiray an dirèk epi jwi chans kaptivan pou genyen gwo rekonpans.</p>
+                    <div class="mt-4 flex justify-between text-[10px] text-gray-500">
+                        <span>Kounye a ap jwe: <b>80</b></span>
+                        <span>Dènye gayan: <b class="text-green-500">$315,41</b></span>
+                    </div>
+                    <button class="w-full mt-4 bg-yellow-500 text-black font-black py-3 rounded-lg text-xs uppercase hover:bg-yellow-400">Jwe kounye a</button>
+                </div>
+            </div>
+        </aside>
     </div>
 
     <script>
-        // Animasyon Jackpot pou l parèt reyèl
-        setInterval(() => {
-            document.getElementById('silver').innerText = (parseInt(document.getElementById('silver').innerText) + 1);
-            document.getElementById('gold').innerText = (parseInt(document.getElementById('gold').innerText) + 2);
-        }, 3000);
+        // Animasyon Jackpot
+        function updateJackpot(id, increment) {
+            setInterval(() => {
+                let el = document.getElementById(id);
+                let val = parseInt(el.innerText);
+                el.innerText = val + Math.floor(Math.random() * increment);
+            }, 2000);
+        }
+        updateJackpot('j1', 2);
+        updateJackpot('j2', 5);
+        updateJackpot('j3', 10);
     </script>
 </body>
 </html>
