@@ -3,81 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky 6 | Pariaj Haiti</title>
+    <title>Lucky 6 | Jwèt</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body { background-color: #0b1623; color: white; }
-        .ball { 
-            width: 50px; height: 50px; border-radius: 50%; display: flex; 
-            align-items: center; justify-content: center; font-weight: bold; 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5); font-size: 1.2rem;
-        }
-    </style>
 </head>
-<body class="p-4 md:p-10">
+<body class="bg-[#0b1623] text-white flex items-center justify-center min-h-screen p-4">
 
-    <div class="max-w-5xl mx-auto">
-        <div class="flex justify-between items-center mb-10 border-b border-gray-800 pb-6">
-            <a href="index.html" class="flex items-center gap-2 text-gray-400 hover:text-yellow-500 font-bold transition">
+    <div class="max-w-4xl w-full bg-[#15202d] rounded-3xl overflow-hidden shadow-2xl border border-gray-800">
+        <div class="p-4 border-b border-gray-800">
+            <a href="index.html" class="text-gray-400 hover:text-yellow-500 font-bold flex items-center gap-2 transition">
                 <i class="fas fa-arrow-left"></i> TOUNEN NAN AKÈY
             </a>
-            <h1 class="text-xl font-black italic uppercase">Paryaj<span class="text-yellow-500">Pam</span></h1>
         </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-[#15202d] rounded-3xl overflow-hidden border border-gray-800 shadow-2xl">
-            
-            <div class="bg-gradient-to-b from-red-900 via-red-800 to-black p-10 flex flex-col items-center justify-center min-h-[400px]">
-                <div class="relative mb-8">
-                    <div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-yellow-500 text-black px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest">Live Draw</div>
-                    <div class="flex gap-3">
-                        <div class="ball bg-yellow-500 text-black animate-bounce" style="animation-delay: 0.1s">10</div>
-                        <div class="ball bg-blue-600 animate-bounce" style="animation-delay: 0.3s">27</div>
-                        <div class="ball bg-white text-red-600 scale-125 border-4 border-red-500 animate-pulse">6</div>
-                        <div class="ball bg-green-600 animate-bounce" style="animation-delay: 0.5s">14</div>
-                        <div class="ball bg-purple-600 animate-bounce" style="animation-delay: 0.7s">5</div>
-                    </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="bg-red-800 p-10 flex flex-col items-center justify-center">
+                <div class="flex gap-2 mb-6">
+                    <span class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center text-black font-bold">6</span>
+                    <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-red-800 font-bold">12</span>
+                    <span class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">45</span>
                 </div>
-                <h2 class="text-6xl font-black italic tracking-tighter">LUCKY 6</h2>
-                <p class="mt-4 text-red-200 font-bold uppercase tracking-widest opacity-80">Pwochen tiraj nan: <span id="timer" class="text-white">00:45</span></p>
+                <h2 class="text-5xl font-black italic">LUCKY 6</h2>
             </div>
-
-            <div class="p-10 flex flex-col justify-center">
-                <h3 class="text-3xl font-bold mb-4 text-yellow-500 italic">Pran Chans Ou!</h3>
-                <p class="text-gray-400 leading-relaxed mb-8">
-                    Lucky 6 se jwèt ki pi popilè an Ayiti kounye a. Chwazi 6 nimewo pami 48, si yo soti nan 35 premye boul yo, ou miltipliye kòb ou jiska 25,000 fwa! 
-                </p>
-
-                <div class="grid grid-cols-2 gap-4 mb-8">
-                    <div class="bg-[#0b1623] p-4 rounded-2xl border border-gray-700">
-                        <p class="text-[10px] text-gray-500 uppercase font-bold">Moun k ap jwe</p>
-                        <p class="text-2xl font-black text-white">1,240</p>
-                    </div>
-                    <div class="bg-[#0b1623] p-4 rounded-2xl border border-gray-700">
-                        <p class="text-[10px] text-gray-500 uppercase font-bold">Dènye Jackpot</p>
-                        <p class="text-2xl font-black text-green-500">$3,450.00</p>
-                    </div>
+            <div class="p-10">
+                <h3 class="text-2xl font-bold text-yellow-500 mb-4">Tiraj an Dirèk</h3>
+                <p class="text-gray-400 text-sm mb-6">Chwazi nimewo w yo epi gade boul yo ap tonbe. Chak segonn se yon chans pou w genyen!</p>
+                <div class="bg-black/30 p-4 rounded-xl mb-6">
+                    <p class="text-xs text-gray-500 uppercase">Estati</p>
+                    <p class="font-bold text-green-500">AP TANN TIRAJ (00:30)</p>
                 </div>
-
-                <button onclick="window.location.href='index.html'" class="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-black py-5 rounded-2xl text-xl transition transform active:scale-95 shadow-lg shadow-yellow-500/20 uppercase italic">
-                    Kòmanse Jwe Kounye a
-                </button>
-                
-                <p class="text-center mt-6 text-[10px] text-gray-600 uppercase tracking-widest">Sekirize pa ParyajPam 🇭🇹</p>
+                <button class="w-full bg-yellow-500 text-black font-black py-4 rounded-xl hover:bg-yellow-400 transition uppercase italic">Parie Kounye a</button>
             </div>
         </div>
     </div>
-
-    <script>
-        // Ti Timer k ap desann pou fè l parèt vivan
-        let seconds = 45;
-        setInterval(() => {
-            if(seconds <= 0) seconds = 45;
-            seconds--;
-            let display = seconds < 10 ? "00:0" + seconds : "00:" + seconds;
-            document.getElementById('timer').innerText = display;
-        }, 1000);
-    </script>
 
 </body>
 </html>
